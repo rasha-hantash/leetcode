@@ -1,7 +1,4 @@
-package main 
-
-
-
+package main
 
 func isValid(s string) bool {
 	var stack []rune
@@ -13,10 +10,10 @@ func isValid(s string) bool {
 	}
 
 	for _, char := range s {
-		if  char == '{' || char == '[' || char == '(' {
+		if char == '{' || char == '[' || char == '(' {
 			stack = append(stack, char)
 		}
-		if  _, exist := parentMap[char]; exist {
+		if _, exist := parentMap[char]; exist {
 			if len(stack) > 0 && stack[len(stack)-1] == parentMap[char] {
 				stack = stack[:len(stack)-1]
 			} else {
