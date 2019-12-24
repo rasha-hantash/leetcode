@@ -21,8 +21,9 @@ func main() {
 
 	// r3 := mergeTwoLists(l1, l2)
 	// display(r3)
-	c := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
-	fmt.Println(maxSubArray(c))
+	// c := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	// fmt.Println(maxSubArray(c))
+	fmt.Println(isHappy(19))
 }
 
 //displays the linked list
